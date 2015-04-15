@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XPaint</string>
+    <string-array name="colors_array">
+        <item>White</item>
+        <item>Black</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Magenta</item>
+        <item>Cyan</item>
+    </string-array>
+    <string-array name="tools_array">
+        <item>Brush</item>
+        <item>Fill</item>
+    </string-array>
+</resources>

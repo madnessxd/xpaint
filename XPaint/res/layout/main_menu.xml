@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:paddingBottom="10dp">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to XPaint"
+            android:id="@+id/textView"
+            android:textSize="30sp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New File"
+            android:id="@+id/button"
+            android:width="80dp"
+            android:onClick="openApp"
+            android:layout_alignTop="@+id/button2" android:layout_alignLeft="@+id/linearLayout"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Image"
+            android:id="@+id/button2"
+            android:width="80dp"
+            android:onClick="openApp"
+            android:layout_below="@+id/imageView" android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera"
+            android:id="@+id/button3"
+            android:width="80dp"
+            android:onClick="openApp"
+            android:layout_alignRight="@+id/linearLayout"
+            android:layout_marginRight="20dp" android:layout_alignTop="@+id/button2"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/xpaint_logo_big" android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use the menubutton of your cellphone to acces the options menu. You can change your brushsettings in this menu. Furthermore, you can save, load or open an image that you made.\nUse the backbutton to undo your last stroke. You can use this function until you are back to the beginning of your drawing.\nMake sure to share your drawings on the facebookpage and you might be featured or shown in the page on the appstore.\n\nThank you for using this app and have fun drawing"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/button" android:layout_centerHorizontal="true" android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp" android:layout_marginLeft="20dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:id="@+id/button4"
+            android:layout_below="@+id/textView2" android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" android:layout_marginBottom="20dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_below="@+id/button"
+                android:layout_alignLeft="@+id/textView2" android:id="@+id/linearLayout">
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

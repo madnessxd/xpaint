@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type"
+                    android:id="@+id/Type" android:layout_weight="0.17" android:textSize="20dp"
+                    android:layout_margin="15dp"/>
+            <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/brushSpinner"
+                    android:layout_toRightOf="@+id/Type"
+                    android:layout_margin="15dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brush Size"
+                    android:id="@+id/brushSize" android:layout_weight="0.17" android:textSize="20dp"
+                    android:layout_margin="15dp"
+                    android:layout_below="@+id/Type"
+                    />
+            <SeekBar
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/brushBar" android:layout_weight="1"
+                    android:layout_toRightOf="@+id/brushSizeTxt"
+                    android:layout_below="@+id/Type"
+                    android:layout_margin="15dp"
+                    android:max="120"/>
+            <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:layout_toRightOf="@+id/brushSize"
+                    android:id="@+id/brushSizeTxt" android:layout_weight="0.17" android:textSize="20dp"
+                    android:layout_alignBottom="@+id/brushBar"
+                    android:layout_centerHorizontal="true"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alpha"
+                    android:id="@+id/transparency" android:layout_weight="0.17" android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_below="@+id/brushSize"/>
+            <SeekBar
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/transBar" android:layout_weight="1"
+                    android:layout_below="@+id/brushSize"
+                    android:layout_toRightOf="@+id/brushSizeTxt"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:max="255"/>
+            <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:layout_toRightOf="@+id/brushSize"
+                    android:id="@+id/transTxt" android:layout_weight="0.17" android:textSize="20dp"
+                    android:layout_alignBottom="@+id/transBar"
+                    android:layout_centerHorizontal="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color"
+                android:id="@+id/color" android:layout_weight="0.17" android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_below="@+id/transparency"/>
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     android:layout_width="fill_parent"
+                     android:layout_height="50dp"
+                     android:stretchColumns="1"
+                     android:id="@+id/tableBg"
+                     android:layout_below="@+id/transparency" android:background="#ff7d36">
+            <TableRow>
+                <SeekBar
+                        android:layout_width="90dp"
+                        android:layout_margin="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/colorRBar" android:layout_weight="1"
+                        android:max="255" android:background="#ff0000"/>
+                <SeekBar
+                        android:layout_width="90dp"
+                        android:layout_margin="15dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/colorGBar" android:layout_weight="1"
+                        android:max="255" android:background="#00ff00"/>
+            <SeekBar
+                    android:layout_width="90dp"
+                    android:layout_margin="15dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/colorBBar" android:layout_weight="1"
+                    android:max="255" android:background="#0000ff"/>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+</LinearLayout>

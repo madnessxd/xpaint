@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="200dp" android:layout_width="wrap_content">
+    <item android:id="@+id/newImage"
+          android:icon="@drawable/new_icon"
+          android:title="New" />
+    <item android:id="@+id/open"
+          android:icon="@drawable/open_icon"
+          android:title="Open" />
+    <item android:id="@+id/save"
+          android:icon="@drawable/save_icon"
+          android:title="Save" />
+    <item android:id="@+id/clear"
+          android:icon="@drawable/clear_icon"
+          android:title="Clear" />
+    <item android:id="@+id/camera"
+          android:icon="@drawable/camera_icon"
+          android:title="Camera" />
+    <item android:id="@+id/tools"
+          android:icon="@drawable/tool_icon"
+          android:title="Tool"/>
+</menu>
